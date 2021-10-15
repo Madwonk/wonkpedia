@@ -1,37 +1,10 @@
-__NOTITLE__
-<templatestyles src="Wonkpedia:Main Page/styles.css" />
-<div id="mp-topbanner" class="mp-bordered">
-<div id="mp-welcomecount">
-<div id="mp-welcome">Welcome to [[Wonkpedia]],</div>
-<div id="mp-free">A project to document nonproliferation and arms control. Note that much of the site is currently under construction!</div>
-<div id="articlecount">We currently have [[Special:Statistics|{{NUMBEROFARTICLES}}]] articles!</div>
-</div>
-</div>
+<strong>MediaWiki has been installed.</strong>
 
-{| role="presentation" id="mp-upper"
-| id="mp-left" class="MainPageBG mp-bordered" |
-<h2 id="mp-tfa-h2" class="mp-h2">Featured article <span class="mp-later"></h2>
-<div id="mp-tfa">{{Template:Wonkpedia:Featured Article}}</div>
-| class="mp-bordered mid-table" |
-| id="mp-right" class="MainPageBG mp-bordered" |
-<h2 id="mp-itn-h2" class="mp-h2">What's going on?</h2>
-<div id="mp-itn">{{Goings_On}}</div>
-|}
-</div>
-<div id="mp-middle" class="MainPageBG mp-bordered">
-<div id="mp-center">
-<h2 id="mp-tfl-h2" class="mp-h2">Portals and Articles</h2>
-<div id="mp-tfl">{{Portals and Articles}}</div>
-</div>
-</div>
-<div id="mp-lower" class="MainPageBG mp-bordered">
-<div id="mp-bottom">
-<h2 id="mp-tfp-h2" class="mp-h2">Lists and Timelines</h2>
-<div id="mp-tfp">{{Lists}}</div>
-</div>
-</div>
+Consult the [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents User's Guide] for information on using the wiki software.
 
-<div id="mp-other-lower" class="mp-bordered">
-<h2 id="mp-other" class="mp-h2">Getting Started</h2>
-<div id="mp-other-content">{{Template:Wonkpedia:Getting Started}}</div>
-</noinclude>__NOTOC____NOEDITSECTION__
+== Getting started ==
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Configuration settings list]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ MediaWiki FAQ]
+* [https://lists.wikimedia.org/postorius/lists/mediawiki-announce.lists.wikimedia.org/ MediaWiki release mailing list]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Localisation#Translation_resources Localise MediaWiki for your language]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Combating_spam Learn how to combat spam on your wiki]
