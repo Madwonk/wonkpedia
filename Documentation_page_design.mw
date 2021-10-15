@@ -1,0 +1,15 @@
+<!-- MENU TABS -->
+<div style="display: table-cell; vertical-align: top; display: flex; flex-direction: row; flex-flow: row wrap; justify-content: space-between;>
+<div style="vertical-align:top; text-align:center; padding-top: 5px; border-bottom: 12px solid #2e86c1; min-width: 110px; max-width: 160px;">
+<big>[[Documentation|✍🏾 Overview]]</big></div>
+<div style="vertical-align:top; text-align:center; padding-top: 5px; border-bottom: 12px solid #17a589; min-width: 110px; max-width: 160px;">
+<big>[[Documentation/Technical style guides and templates|📝 Style guides, templates, and tools]]</big></div>
+<div style="vertical-align:top; text-align:center; padding-top: 5px; border-bottom: 12px solid #148f77; min-width: 110px; max-width: 160px;">
+<big>[[Documentation/Resources for technical writers|✨ Strengthen your technical writing skills]]</big></div>
+<div style="vertical-align:top; text-align:center; padding-top: 5px; border-bottom: 12px solid #5499c7; min-width: 110px; max-width: 160px;">
+<big>[[Documentation/Planning for better technical documentation|📓 Planning for better docs]]</big></div>
+<div style="vertical-align:top; text-align:center; padding-top: 5px; border-bottom: 12px solid #1f618d; min-width: 110px; max-width: 160px;">
+<big>[[Documentation/Technical documentation community and outreach programs|🤝 Docs community and outreach programs]]</big></div>
+<div style="vertical-align:top; text-align:center; padding-top: 5px; border-bottom: 12px solid #2e86c1; min-width: 110px; max-width: 160px;">
+<big>[[phab:project/view/987/|✔️ Documentation workboard]]</big></div>
+</div>
