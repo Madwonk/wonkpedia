@@ -1,0 +1,86 @@
+<languages/>
+
+{{:Documentation_page_design}}
+__NOTOC__
+<translate>
+== Overview == <!--T:22-->
+
+<!--T:23-->
+[[w:Technical_documentation|Technical documentation]] refers to any documentation that contains information regarding a technical product, process, or task.
+</translate>
+
+<translate><!--T:24--> Documentation for Wikimedia projects is widely spread across different wikis and websites.</translate>
+<translate><!--T:25--> This page focuses on technical documentation for <tvar name=1>{{ll|MediaWiki}}</tvar> and related software.</translate>
+
+== Why contribute to technical documentation? ==
+
+Technical documentation is an important part of Wikimedia technical projects. Quality documentation is especially important for open-source projects where folks from all over the world are working together. It provides history, context, accurate information, and repeatable steps that people can follow.
+
+If you are interested in contributing to Wikimedia's technical projects, improving technical documentation can be a good starting place.
+
+== Where to find Wikimedia technical documentation ==
+
+There are many Wikimedia technical projects, and sometimes it can be difficult to determine the best place to find or publish technical documentation. Following is a list of the main places to find Wikimedia technical documentation.
+
+* [[MediaWiki]] - MediaWiki software documentation and technical documentation for many other Wikimedia technology projects. This is the default space for publishing technical documents about Wikimedia technology.
+* [[Wikitech]] - Technical documentation for Wikimedia Foundation infrastructure and services.  This includes production clusters, Wikimedia Cloud Services, Toolforge hosting, the Beta Cluster, and other data services. 
+* [[Wikidata]] - Technical documentation related to the Wikidata project, particularly the [[Wikidata:Tools | Tools]] page.
+* [https://wikitech.wikimedia.org/wiki/PAWS PAWS] - Documentation about PAWS, Wikimedia's hosted Jupyter notebooks instance. Notebooks are frequently used to create tutorials and documentation for Wikimedia technology.
+* [[Phabricator]] - Phabricator is a collaboration tool that is used by the Wikimedia technical community for task and bug management. You can find many issues and software projects documented here. Use best practices for software documentation when filing tasks and interacting in this space.
+
+<translate>
+== Documentation structure == <!--T:33-->
+
+<!--T:34-->
+* On <tvar name=1>{{ll|MediaWiki|MediaWiki.org}}</tvar>:</translate>
+<translate>
+<!--T:35-->
+** A '''[[<tvar name=1>Special:MyLanguage/Manual:Contents</tvar>|Technical Manual]]''' for information about the MediaWiki Software.</translate>
+<translate>
+<!--T:36-->
+** Project based documentation.</translate> <translate><!--T:37--> This includes user guides, API documentation, tutorials, development information and reference materials related to specific projects.</translate>
+<translate>
+<!--T:38-->
+** '''[[<tvar name=1>Special:MyLanguage/Help:Contents</tvar>|Help]] pages''' contain end-user specific documentation and <tvar name=2>'''{{ll|Special pages}}'''</tvar> provide some on-demand documentation.</translate>
+<translate>
+<!--T:39-->
+* Auto-generated API documentation:
+</translate>
+** '''[https://www.mediawiki.org/w/api.php <translate><!--T:40--> Action API reference</translate>]'''
+** '''[https://www.mediawiki.org/api/rest_v1/ <translate><!--T:41--> REST API reference</translate>]'''
+<translate>
+<!--T:11-->
+* Documentation generated from the source code of MediaWiki: <tvar name=1>'''[https://doc.wikimedia.org/ doc.wikimedia.org]'''</tvar>.</translate>
+<translate>
+<!--T:42-->
+* Text files in the '''<tvar name=1>[[phab:source/mediawiki/browse/master/docs/|/docs]]</tvar> directory''' of MediaWiki source tree have code related information.
+
+<!--T:43-->
+Supporting resources include '''blogs, talk pages and discussion forums'''.
+</translate>
+
+{{Note|1=<translate><!--T:44--> Some documentation [[<tvar name=1>m:Special:MyLanguage/Category:Pages_to_be_exported_to_MediaWiki.org</tvar>|is yet to be migrated]] from [[<tvar name=2>m:Special:MyLanguage/Main_Page</tvar>|meta.wikimedia.org]].</translate> <translate><!--T:45--> See [[<tvar name=1>m:Special:MyLanguage/Meta:MetaProject_to_transfer_content_to_MediaWiki.org</tvar>|MetaProject to transfer content to MediaWiki.org]]</translate>}}
+
+<translate>
+== Documentation audiences == <!--T:46-->
+
+<!--T:47-->
+Primary users of the MediaWiki documentation and the most useful set of pages for each user-group are listed below.
+</translate>
+
+* '''Wiki users (end users of the MediaWiki software)''' <br /> {{ll|Help:Contents}} at {{ll|MediaWiki|mediawiki.org}} and [https://meta.wikimedia.org/wiki/Help:Contents meta] are concise forms of end-user documentation.
+* '''[[Special:MyLanguage/Sysadmin hub|System administrators]]''' <br /> Pages linked to {{ll|Category:MediaWiki for site admins}} and {{ll|Sysadmin hub}} contain sysadmin specific information. [[Manual:Contents]] serves as the reference guide.
+* '''Wiki administrators''' <br /> [https://en.wikibooks.org/wiki/MediaWiki_Administrator%27s_Handbook MediaWiki Administrator's Handbook] and {{ll|Manual:Administrators}} contain resources for administrators. {{ll|Manual:Contents}} serves as the reference guide.
+* '''Developers'''
+** '''[[Special:MyLanguage/Developers|Code developers]] and administrators''' <br /> {{ll|New Developers}}, {{ll|Manual:Contents}} and linked pages are a starting point for beginners. Experienced developers refer to {{ll|Developer hub}}.
+** '''Add-ons developers''' <br /> References include {{ll|Developer hub}}, {{ll|Manual:Extensions}}, {{ll|Category:Extensions}}, {{ll|Gadget kitchen}}, {{ll|Manual:Bots}}, etc., besides the software installation guidelines.
+** '''Designers''' <br /> Pages linked to {{ll|Design}}.
+** '''Translators and technical writers''' <br /> {{ll|Translator hub}} and {{ll|Help:Contents}} for getting started followed by the project specific mediawiki pages.
+
+For a more comprehensive exploration of the types of people who use Wikimedia technical documentation and their motivations, see [[Documentation/Audiences for Wikimedia technical documentation | Audiences for Wikimedia technical documentation]].
+
+== Get started ==
+
+New to technical documentation on Wikimedia projects? [[Documentation/New_technical_writers|This page will help you get starte]]d right away.
+
+[[Category:Documentation{{#translation:}}]]
