@@ -1,30 +1,13 @@
-[[File:Fooobs jeffrey.gif|thumb|128x128px|ASMR]]
 '''FOBS''' are a form of weapon delivery system which enters Earth orbit before de-orbiting and falling back into the atmosphere towards a target. You can think about it like an ICBM that takes the longer route in space instead of the shorter, direct "ballistic" route (where the missile simply goes up and down).
 
-== History ==
-Todo
-
 == Technical Details ==
-
-=== Trajectory ===
 So, why would you send your favorite energetic package via FOBS instead of, say, a more conventional ICBM? Perhaps you're a country like [[North Korea]], whose ballistic trajectory would pass over American missile defenses in Alaska and Canada. Since FOBS goes into orbit, you aren't limited to the shortest path (over the North Pole), and you can instead go the "long" way (say, over the South Pole where there are currently no missile defenses).
 
-[[File:Scott Lafory FOBS Model.mp4|426x240px|thumb|Hacky modeling does not come with warranty]]
 
-FOBS requires a bigger missile to reach the high speeds necessary for orbit, and may require more advanced staging and control upon reentry (or in the case a reentry burn is required). However, there's some advantages to FOBS: for some trajectories, they may reach the target more quickly as they don't need as high a trajectory as ICBMs (in the case of the Soviets, up to 10 minutes quicker).<ref>https://www.armscontrolwonk.com/archive/1213580/glide-or-die/</ref><ref>https://foreignpolicy.com/2021/10/18/hypersonic-china-missile-nuclear-fobs/</ref> However, this would require an uncommonly high (lofted) trajectory for the conventional ICBM, as is shown in Scott LaFoy's hacky sim on the right.<ref>https://twitter.com/wslafoy/status/1450836014860316679?s=20</ref>
-
-=== Reentry Vehicle ===
-FOBS doesn't really have hard-and-fast reentry vehicle requirements, as long as it can survive reentry. If you're trying for a faster strike, a "traditional" reentry vehicle might make sense, but you could also try for a lifting body similar to the Space Shuttle or a similar kind of glider. All up to you! <todo: list some different examples of each>
+FOBS requires a bigger missile to reach the high speeds necessary for orbit, and may require more advanced staging and control upon reentry (or in the case a reentry burn is required).
 
 == China ==
-{{Main|Unnamed Chinese FOBS system}}
-[[todo]]: write a short summary here<ref>https://www.armscontrolwonk.com/archive/1213655/a-fractional-orbital-bombardment-system-with-a-hypersonic-glide-vehicle/</ref>
+todo: write a short summary here
 
 == Russia ==
 todo: write a short summary here, maybe link to a page about historical sites of Russian space program
-
-== Additional Reading ==
-https://en.wikipedia.org/wiki/Fractional_Orbital_Bombardment_System
-
-== References ==
-<references />
