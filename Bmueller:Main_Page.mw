@@ -1,0 +1,60 @@
+<templatestyles src="Wonkpedia:Main Page/styles.css" />
+<div id="mp-topbanner" class="mp-bordered">
+<div id="mp-welcomecount">
+<div id="mp-welcome">Welcome to [[Wikipedia]],</div>
+<div id="mp-free">the [[free content|free]] [[encyclopedia]] that [[Help:Introduction to Wikipedia|anyone can edit]].</div>
+<div id="articlecount">[[Special:Statistics|{{NUMBEROFARTICLES}}]] articles in [[English language|English]]</div>
+</div>
+<ul id="mp-portals">
+<li>[[Portal:The arts|The arts]]</li>
+<li class="portal-vmid">[[Portal:Biography|Biography]]</li>
+<li class="portal-vbot">[[Portal:Geography|Geography]]</li>
+<li class="portal-hmid">[[Portal:History|History]]</li>
+<li class="portal-hmid portal-vmid">[[Portal:Mathematics|Mathematics]]</li>
+<li class="portal-hmid portal-vbot">[[Portal:Science|Science]]</li>
+<li class="portal-hright">[[Portal:Society|Society]]</li>
+<li class="portal-hright portal-vmid">[[Portal:Technology|Technology]]</li>
+<li class="portal-hright portal-vbot">[[Wikipedia:Contents/Portals|All portals]]</li>
+</ul>
+</div>
+{{#if:{{Main Page banner}}|
+<div id="mp-banner" class="MainPageBG mp-bordered">
+{{Main Page banner}}
+</div>
+}}
+{| role="presentation" id="mp-upper"
+| id="mp-left" class="MainPageBG mp-bordered" |
+<h2 id="mp-tfa-h2" class="mp-h2">{{#ifexpr:{{formatnum:{{PAGESIZE:Wikipedia:Today's featured article/{{#time:F j, Y}}}}|R}}>150|From today's featured article|Featured article <span class="mp-later">(Check back later for today's.)</span>}}</h2>
+<div id="mp-tfa">{{#ifexpr:{{formatnum:{{PAGESIZE:Wikipedia:Today's featured article/{{#time:F j, Y}}}}|R}}>150|{{Wikipedia:Today's featured article/{{#time:F j, Y}}}}|{{Wikipedia:Today's featured article/{{#time:F j, Y|-1 day}}}}}}</div>
+<h2 id="mp-dyk-h2" class="mp-h2">Did you know&nbsp;...</h2>
+<div id="mp-dyk">{{Did you know}}</div>
+| class="mp-bordered mid-table" |
+| id="mp-right" class="MainPageBG mp-bordered" |
+<h2 id="mp-itn-h2" class="mp-h2">In the news</h2>
+<div id="mp-itn">{{In the news}}</div>
+<h2 id="mp-otd-h2" class="mp-h2">On this day</h2>
+<div id="mp-otd">{{Wikipedia:Selected anniversaries/{{#time:F j}}}}</div>
+|}
+<!-- IF MONDAY OR FRIDAY, SHOW TFL -->{{#switch:{{CURRENTDAYNAME}}|Monday|Friday=
+<div id="mp-middle" class="MainPageBG mp-bordered">
+<div id="mp-center">
+<h2 id="mp-tfl-h2" class="mp-h2">From today's featured list</h2>
+<div id="mp-tfl">{{#ifexist:Wikipedia:Today's featured list/{{#time:F j, Y}}|{{Wikipedia:Today's featured list/{{#time:F j, Y}}}}|{{TFLempty}}}}</div>
+</div>
+</div>|}}<!-- END CONDITIONAL SHOW -->
+<div id="mp-lower" class="MainPageBG mp-bordered">
+<div id="mp-bottom">
+<h2 id="mp-tfp-h2" class="mp-h2">{{#ifexist:Template:POTD protected/{{#time:Y-m-d}}|Today's featured picture|Featured picture&ensp;<span class="mp-later">(Check back later for today's.)</span>}}</h2>
+<div id="mp-tfp">{{#ifexist:Template:POTD protected/{{#time:Y-m-d}}|{{POTD protected/{{#time:Y-m-d}}}}|{{POTD protected/{{#time:Y-m-d|-1 day}}}}}}</div>
+</div>
+</div>
+<div id="mp-other-lower" class="mp-bordered">
+<h2 id="mp-other" class="mp-h2">Other areas of Wikipedia</h2>
+<div id="mp-other-content">{{Other areas of Wikipedia}}</div>
+<h2 id="mp-sister" class="mp-h2">Wikipedia's sister projects</h2>
+<div id="mp-sister-content">{{Wikipedia's sister projects}}</div>
+<h2 id="mp-lang" class="mp-h2">Wikipedia languages</h2>
+<div>{{Wikipedia languages}}</div>
+</div><noinclude>{{Main Page interwikis}}{{noexternallanglinks}}{{#if:{{Wikipedia:Main_Page/Tomorrow}}||}}</noinclude>__NOTOC____NOEDITSECTION__
+
+todo: update this formatting to properly wrap links and then push to main page
