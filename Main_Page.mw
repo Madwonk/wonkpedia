@@ -24,11 +24,11 @@ __NOTITLE__
 </div>
 <div id="mp-lower" class="MainPageBG mp-bordered">
 <div id="mp-bottom">
-<h2 id="mp-tfp-h2" class="mp-h2">Lists</h2>
+<h2 id="mp-tfp-h2" class="mp-h2">Lists and Timelines</h2>
 <div id="mp-tfp">{{Lists}}</div>
 </div>
 </div>
-</div>
+
 <div id="mp-other-lower" class="mp-bordered">
 <h2 id="mp-other" class="mp-h2">Getting Started</h2>
 <div id="mp-other-content">{{Template:Wonkpedia:Getting Started}}</div>
