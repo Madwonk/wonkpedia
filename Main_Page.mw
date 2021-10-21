@@ -1,9 +1,41 @@
-__NOTITLE__<!----------------------Top of page welcome with links--------------------------->
+__NOTITLE__
+<templatestyles src="Wonkpedia:Main Page/styles.css" />
+<div id="mp-topbanner" class="mp-bordered">
+<div id="mp-welcomecount">
+<div id="mp-welcome">Welcome to [[Wonkpedia]],</div>
+<div id="mp-free">A project to document nonproliferation and arms control.</div>
+<div id="articlecount">We currently have [[Special:Statistics|{{NUMBEROFARTICLES}}]] articles!</div>
+</div>
+{| role="presentation" id="mp-upper"
+| id="mp-left" class="MainPageBG mp-bordered" |
+<h2 id="mp-tfa-h2" class="mp-h2">Featured article <span class="mp-later"></h2>
+<div id="mp-tfa">{{Template:Wonkpedia:Featured Article}}</div>
+| class="mp-bordered mid-table" |
+| id="mp-right" class="MainPageBG mp-bordered" |
+<h2 id="mp-itn-h2" class="mp-h2">What's going on?</h2>
+<div id="mp-itn">{{Goings_On}}</div>
+|}
+</div>
+<div id="mp-middle" class="MainPageBG mp-bordered">
+<div id="mp-center">
+<h2 id="mp-tfl-h2" class="mp-h2">Portals and Articles</h2>
+<div id="mp-tfl">{{Portals and Articles}}</div>
+</div>
+<div id="mp-lower" class="MainPageBG mp-bordered">
+<div id="mp-bottom">
+<h2 id="mp-tfp-h2" class="mp-h2">Lists</h2>
+<div id="mp-tfp">{{Lists}}</div>
+</div>
+</div>
+</div>
+<div id="mp-other-lower" class="mp-bordered">
+<h2 id="mp-other" class="mp-h2">Getting Started</h2>
+<div id="mp-other-content">{{Template:Wonkpedia:Getting Started}}</div>
+</noinclude>__NOTOC____NOEDITSECTION__
+
+
 {{Template:Wonkpedia:Welcome}}
 
-[[todo]]: make this main page more like the Wikipedia or Rationalwiki main pages with different sections, tables, etc.
-
-== Getting Started ==
 * [[Country pages]]
 * [[Wonkpedia:Contribution Guide|Contributor guide]]
 * [https://github.com/BenMueller/wonkpedia Github]
