@@ -6,6 +6,7 @@ __NOTITLE__
 <div id="mp-free">A project to document nonproliferation and arms control.</div>
 <div id="articlecount">We currently have [[Special:Statistics|{{NUMBEROFARTICLES}}]] articles!</div>
 </div>
+</div>
 {| role="presentation" id="mp-upper"
 | id="mp-left" class="MainPageBG mp-bordered" |
 <h2 id="mp-tfa-h2" class="mp-h2">Featured article <span class="mp-later"></h2>
