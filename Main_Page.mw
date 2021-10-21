@@ -10,7 +10,6 @@ __NOTITLE__
 | id="mp-left" class="MainPageBG mp-bordered" |
 <h2 id="mp-tfa-h2" class="mp-h2">Featured article <span class="mp-later"></h2>
 <div id="mp-tfa">{{Template:Wonkpedia:Featured Article}}</div>
-
 | class="mp-bordered mid-table" |
 | id="mp-right" class="MainPageBG mp-bordered" |
 <h2 id="mp-itn-h2" class="mp-h2">What's going on?</h2>
