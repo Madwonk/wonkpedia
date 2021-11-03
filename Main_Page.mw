@@ -26,7 +26,7 @@ __NOTITLE__
 </div>
 <div id="mp-lower" class="MainPageBG mp-bordered">
 <div id="mp-bottom">
-<h2 id="mp-tfp-h2" class="mp-h2">Lists and Timelines</h2>
+<h2 id="mp-tfp-h2" class="mp-h2">Lists, Timelines, and Dashboards</h2>
 <div id="mp-tfp">{{Lists}}</div>
 </div>
 </div>
