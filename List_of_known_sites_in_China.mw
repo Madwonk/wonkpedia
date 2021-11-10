@@ -1,6 +1,8 @@
 == Launch Sites ==
-<dpl>
+<DynamicPageList>
 category=Chinese Launch Site Location
-</dpl>
+count                = 5
+order                = ascending
+</DynamicPageList>
 
 == Silo Fields ==
