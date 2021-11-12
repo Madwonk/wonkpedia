@@ -1,5 +1,5 @@
-
-{{#display_map:center=38.8631, 111.5894}}
+words here
+{{#display_map:38.8631, 111.5894|label=Wuzhai|width=25%|copycoords=yes}}
 {{#coordinates: 38.8631, 111.5894|format=dd|directional=yes}}
 
 [[Category:Chinese Launch Site Location]]
