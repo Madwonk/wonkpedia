@@ -1,3 +1,18 @@
 {{Coord|38.8631|111.5894|display=title}}
 
+<mapframe text="San Francisco museums" width=350 height=350 zoom=13 longitude=-122.3988 latitude=37.8013>
+{
+  "type": "Feature",
+  "geometry": { "type": "Point", "coordinates": [-122.3988, 37.8013] },
+  "properties": {
+    "title": "[[wikipedia:Exploratorium|Exploratorium]]",
+    "description": "[[File:Giant_Mirror_at_the_Exploratorium.jpeg|200px]]",
+    "marker-symbol": "museum",
+    "marker-size": "large",
+    "marker-color": "0050d0"
+  }
+}
+</mapframe>
+
+
 [[Category:Chinese Launch Site Location]]
