@@ -1,0 +1,12 @@
+You can use the button below to create a new page:
+<inputbox> 
+type=create
+width=100
+break=no
+buttonlabel=Create new article
+default=(Article title)
+</inputbox>
+
+== Guides ==
+
+* How to identify different types of rockets/fuels by the plume/flame. Solid vs. liquid is pretty easy, but what is the variation between different liquid fuel colors?
