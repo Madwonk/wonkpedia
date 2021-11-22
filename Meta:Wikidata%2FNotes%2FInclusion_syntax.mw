@@ -1,0 +1,59 @@
+{{draft}}
+{{Message | type = attention | '''New Version (May 2013)'''
+This is a subset of the [[Wikidata/Notes/Inclusion_syntax_v0.3|previous draft]]!
+}}
+
+This page describes the data inclusion syntax for the Wikibase client, by which the [[d:Wikidata:Glossary#Entities, Items, Properties and Queries|properties]] of data items can be included and rendered on a wiki page using templates. In short: This is how we want Wikipedia articles to include data from Wikidata.
+
+The inclusion syntax presented here is meant to work for very simple cases, and only for them.
+
+Complicated cases are to be realized using [[mw:Extension:WikibaseClient/Lua|Lua]].
+
+== Accessing Item Data ==
+
+=== Properties ===
+
+Properties of a Wikidata Item can be used via the #property parser function:
+
+  <nowiki>{{#property:P36}}</nowiki>
+  <nowiki>{{#property:capital}}</nowiki>
+
+This will provide a representation of the value of the <code>capital</code> property of the page's default item. The default item is the Wikidata item that is associated with this page via language links.
+
+The property label is case sensitive. It is also possible to use the identifier of the property (this is more stable against changes of the label of a property).
+
+=== Properties of different items ===
+
+To access properties of a different item, it has to be specified explicitly by its ID. (This was implemented in [[phab:T49930]].)
+
+* <code><nowiki>{{#property:P36|from=Q183}}</nowiki></code> → {{#property:P36|from=Q183}}
+* <code><nowiki>{{#property:capital|from=Q183}}</nowiki></code> → {{#property:capital|from=Q183}}
+
+Specification of the item by its Wikipedia title ''is not implemented yet'':
+
+* <code><nowiki>{{#property:P36|from=Germany}}</nowiki></code> → {{#property:P36|from=Germany}}
+* <code><nowiki>{{#property:capital|from=Germany}}</nowiki></code> → {{#property:capital|from=Germany}}
+* <s>However, using [[Scribunto|Scribunto]], ''<nowiki>msg = mw.message.newRawMessage("{{#property:capital}}"):title("Germany"):text()</nowiki>'' will return "Bonn, Berlin" from any page.  (Presently this result will not be updated when the Wikidata entry is updated)</s> This workaround has been intentionally rendered inoperative.<sup>[https://www.mediawiki.org/w/index.php?title=Extension:Scribunto/Lua_reference_manual&diff=900259&oldid=898845]</sup>  You can use Wikidata if you run an external site that is free to make use of its API.
+* Another workaround: Scribunto function '''[[mw:Extension:Wikibase Client/Lua#mw.wikibase.getEntityIdForTitle|mw.wikibase.getEntityIdForTitle]]''' (not implemented yet - [[phab:T74815]])
+
+=== Property rank and multiple values ===
+
+If a Wikidata property value has a "deprecated rank", <nowiki>{{#property:}}</nowiki> will not display it:
+
+* {{Q|Q25899}} has {{Q|P3520}} value LEROUROB01 (deprecated rank)
+** <code><nowiki>{{#property:P3520|from=Q25899}}</nowiki></code> → {{#property:P3520|from=Q25899}}
+* {{Q|Q25899}} has {{Q|P213}} value 0000 0004 3980 4014 (normal rank)
+** <code><nowiki>{{#property:P213|from=Q25899}}</nowiki></code> → {{#property:P213|from=Q25899}}
+
+If a Wikidata property has multiple values, <nowiki>{{#property:}}</nowiki> will only display the highest ranked values:
+
+* {{Q|Q182462}} has {{Q|P1220}} values 41898 (preferred rank) and 80344 (normal rank)
+** <code><nowiki>{{#property:P1220|from=Q182462}}</nowiki></code> → {{#property:P1220|from=Q182462}}
+* {{Q|Q2894503}} has {{Q|P1220}} values 57807 and 69418 (both normal rank)
+** <code><nowiki>{{#property:P1220|from=Q2894503}}</nowiki></code> → {{#property:P1220|from=Q2894503}}
+
+== Work in progress ==
+{{Update|type=section|comment=Listed properties are in use but work may not be complete.}}
+
+
+[[Category:Wikidata]]
