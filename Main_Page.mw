@@ -4,7 +4,7 @@ __NOTITLE__
 <div id="mp-welcomecount">
 <div id="mp-welcome">Welcome to [[Wonkpedia]],</div>
 <div id="mp-free">A project to document nonproliferation and arms control. Note that much of the site is currently under construction!</div>
-<div id="articlecount">We currently have [[Special:Statistics|{{NUMBEROFARTICLES}}]] articles</div>
+<div id="articlecount">We currently have [[Special:Statistics|{{NUMBEROFARTICLES}}]] articles!</div>
 </div>
 </div>
 
@@ -17,7 +17,7 @@ __NOTITLE__
 <h2 id="mp-itn-h2" class="mp-h2">What's going on?</h2>
 <div id="mp-itn">{{Goings_On}}</div>
 |}
-</div>
+
 <div id="mp-middle" class="MainPageBG mp-bordered">
 <div id="mp-center">
 <h2 id="mp-tfl-h2" class="mp-h2">Portals and Articles</h2>
