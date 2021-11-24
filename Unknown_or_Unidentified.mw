@@ -1,0 +1,13 @@
+One of the functions of Wonkpedia is to help crowdsource the process of open-source research and analysis. As such, the "Unknown" portal/namespace is dedicated to hosting pages that involve nonproliferation topics that need further research or work to better understand and/or identify. Alternatively, you can tag sites/pages with the "Unknown" category to show up on the main list of [[:Category:Unknown or Unidentified|unknown/unidentified content]].
+
+== Creating a new page about unknown/unidentified content ==
+If you want to include pictures of the specified content, you can [[Special:UploadWizard|upload them in bulk here]]. However, you will have to upload videos/other file types manually with "[[Special:Upload|Upload File]]" on the left side banner. You can then create a new "Unknown" page with the dialog box below.
+
+<inputbox> 
+type=create
+namespaces=Unknown
+width=100
+break=no
+buttonlabel=Create new unknown page
+default=(Title)
+</inputbox>
