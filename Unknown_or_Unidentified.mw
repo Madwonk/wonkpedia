@@ -5,9 +5,8 @@ If you want to include pictures of the specified content, you can [[Special:Uplo
 
 <inputbox> 
 type=create
-namespaces=Unknown
 width=100
 break=no
 buttonlabel=Create new unknown page
-default=(Title)
+default=Unknown:
 </inputbox>
