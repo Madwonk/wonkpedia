@@ -28,6 +28,8 @@ __NOTITLE__
 <div id="mp-bottom">
 <h2 id="mp-tfp-h2" class="mp-h2">Lists and Timelines</h2>
 <div id="mp-tfp">{{Lists}}</div>
+<h2 id="mp-tfp-h2" class="mp-h2">Guides</h2>
+<div id="mp-tfp">{{Guides}}</div>
 </div>
 </div>
 
