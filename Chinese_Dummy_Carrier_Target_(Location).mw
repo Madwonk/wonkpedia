@@ -1,6 +1,8 @@
 {{main|Chinese Dummy Carrier Target}}
 Only recently identified
-{{#display_map:38.59788, 87.72031|label=Carrier moves|width=25%|copycoords=yes}}
-{{#coordinates: 38.59788, 87.72031|format=dd|directional=yes}}
+{{#display_map:38.59788, 87.72031; 38.59629, 87.73832|label=Carrier moves|width=25%|copycoords=yes}}
+Ships on rail: {{#coordinates: 38.59788, 87.72031|format=dd|directional=yes}}
+
+Ships on ground- tarp? {{#coordinates: 38.59629, 87.73832|format=dd|directional=yes}}
 
 [[Category:Chinese Target Location]]
