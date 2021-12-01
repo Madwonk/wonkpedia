@@ -1,0 +1,237 @@
+{{TOCright}}
+
+== About lua ==
+Lua is a [[:en:Scripting_language | scripting language]] which can be used to analyze data and calculate expressions. It formats results which support procedural programming, object-oriented programming, functional programming, data-driven programming, and data description. Although some Lua scripts can be kept simple, for easy understanding. 
+
+Lua allows complex structures including tables, dynamic functions, and [[:en:associative array | associative array]]s where index [[:en:subscript | subscript]]s can be words as well as index numbers. It is dynamically typed (This means that variables do not have types; only values do), runs by interpreting bytecode with a register-based virtual machine, and has automatic memory management with a generational garbage collection, making it ideal for configuration, scripting, and rapid prototyping.
+
+Lua is implemented as a library, written in clean C, the common subset of Standard C and C++. The Lua distribution includes a host program called Lua, which uses the Lua library to offer a complete, standalone Lua interpreter, for interactive or batch use.
+
+Lua is a lightweight programming language that is particularly suited for embedding within other software. The software used by Wikipedia, called MediaWiki, has an extension that provides a version of Lua that can be used within Wikipedia pages. The extension is called [[mw:Extension:Scribunto|Scribunto]].
+
+[[:en:Lua (programming language)|Lua]] is a programming language that is available via the [[mw:Extension:Scribunto|Scribunto]] [[MediaWiki extension]] on the English Wikipedia. Lua code can now be embedded into wiki templates(this acts as the host client) by employing the "<nowiki>{{#invoke:}}</nowiki>" functionality of Scribunto.
+
+== Differences between lua and scribunto==
+
+[[:en:Lua (programming language)|Lua]] is a programming language that is available via the [[mw:Extension:Scribunto|Scribunto]] [[MediaWiki extension]] on the English Wikipedia. The Scribunto extension allows for embedding scripting languages in MediaWiki. Lua code can now be embedded into wiki templates by employing the "<nowiki>{{#invoke:}}</nowiki>" functionality of Scribunto. This extension supports Lua 5.1 {{as of|lc=y|2015|07}}.
+
+Currently, the only supported scripting language is [[w:Wikipedia: Lua|Lua]].
+
+A Scribunto module in itself is really a large function: it runs from top to bottom and is expected to return a value. It could return a table of strings, a table containing other tables, or even a single value. Normally, it returns a table of exported functions that can be used with <code><nowiki>{{#invoke: }}</nowiki></code>
+
+== Benefit of lua scripting ==
+
+Templates and [[Extension: ParserFunctions|ParserFunctions]] were introduced to allow end-users of MediaWiki to replicate content easily and build tools using basic logic, effectively turning wikitext into a limited programming language.
+
+However, complex templates have caused performance issues and bottlenecks.
+
+This project aims to make it possible for MediaWiki end-users to use a proper [[:w: Scripting language|scripting language]] that will be more powerful and efficient than ad-hoc ParserFunctions-based logic.
+
+== Getting started with lua on wikipedia ==
+
+The software used by Wikipedia, called MediaWiki, has an extension that provides a version of Lua that can be used within Wikipedia pages. The extension is called Scribunto.
+
+The Lua [[:en:source code | source code]] is stored in pages called modules. The module itself must return a Lua table containing the functions that may be called by <code><nowiki>{{#invoke:}}</nowiki></code>. Any functions that are not added to this table, whether local or global, will not be accessible by <code><nowiki>{{#invoke:}}</nowiki></code>, but globals might be accessible from other modules loaded using <code>[[#require|require()]]</code>. 
+
+It is generally a good style for the module to declare all functions and variables '''local'''.
+
+These individual modules can be invoked following this format <code><nowiki>{{#invoke:<Module name>|<Function name>|(optional) param1 | param2...}}</nowiki></code>). In the example below, we will be working with Lua on Wikipedia using module sandbox (contain the Lua code to be run) and user sandbox (contain the wiki-text that runs the code and displays the results).
+
+=== Prerequisite ===
+
+* Create a Wikipedia account if you don't already have one – see [[Wikipedia: Why create an account?]]
+
+* After you have logged in to your account, use the link at the top right of your page that has your username to create your user page. In the ''edit box'', write a sentence, but don't add personal information. Preview your edit and '''save''' it.
+
+*  Use the link at the top right of your page to create your sandbox. Write a brief note saying that this is your user sandbox, preview it and '''save''' it. Remember that what you type can potentially be seen by anybody, so be sensible!
+
+* Read about Scribunto, the Lua implementation embedded in Wikimedia software: [[Wikipedia: Lua]]
+
+* Create an empty module sandbox for yourself as a subfolder of [[Module: Sandbox]] For example, if your user name is "Gechy", then create your module at [[:en:Module: Sandbox/Gechy/ogechi | Module:Sandbox/Gechy/ogechi]]. Note that any spaces will be converted to underscores <samp>_</samp> in the page URL that you can see in your browser's address bar. This is called the URL-encoding.
+
+* In your module sandbox add a line of text starting with two hyphens: <code>--</code>
+
+* After the two hyphens, type your username followed by <code> Introduction to Lua in Wikipedia</code>. Text beginning with two hyphens is used in Lua to designate a comment.
+
+* ''' Save''' your module sandbox.
+
+=== Running lua code in wikipedia ===
+
+A Wikipedia page can call a Lua module to do calculations, process text, format citations, fetch information from Wikidata, and many other jobs where a programming language is needed to get a result. A Lua module is used inside a Wikipedia page by using a call something like
+<code><nowiki>{{#invoke:RexxS|carousel}}</nowiki></code>
+
+* In your user sandbox (not your module sandbox), leave a blank line after your brief note, then type this: <code><nowiki>== Task 1 ==</nowiki></code>
+
+Putting == around a phrase creates a level 2 Html heading. We can use that to break up our user sandbox into sections for different tasks.
+
+* On the line below that, type or copy <code><nowiki>{{#invoke:RexxS|carousel}}</nowiki></code> and '''save it'''. 
+
+'''Please don't miss out saving your user sandbox each time you are instructed to.'''
+
+You should see the filename of a JPG image. The line makes use of a module called [[:en:Module: RexxS | Module: Rexxs]]. Modules can contain many functions and the line you have entered calls a function in that module called "carousel".
+
+* Add another new line in your user sandbox that reads <code><nowiki>[[File:{{#invoke:RexxS|carousel}} | thumb]]</nowiki></code> and '''save it'''.
+
+This uses the standard Wikipedia image syntax to display the image. You can read a lot more about image syntax at [[Wikipedia: Extended image syntax]].
+
+* Look at [[:en:Module: RexxS | Module:Rexxs]] and examine the code. See if you can work out how the function picks a filename. You may find the documentation at http://www.lua.org/manual/5.3/ helps you to learn how Lua works.
+
+You should be able to work out that the filenames of the images which can be returned are kept in a list. In Lua, lists are tables. The table is the only data structure used and all other types of data structures, arrays, sequences, objects, etc. are created from tables.
+
+In the Lua Module, we can have as many functions as we want and this can be called by simply identifying the function name.
+
+{| class="wikitable"
+|-
+! Wikitext
+! Result
+|-
+|  <code><nowiki>{{#invoke:Example|hello}}</nowiki></code>
+| {{:en:#invoke:Example|hello}}
+|}
+In the example above the module used is called [[:en:Module: Example | Module:Example]] and a Function name called '''hello''' is invoked see a snippet of the hello function from the [[:en:Module: Example | Module:Example]] below:
+<source lang="Lua">
+local p = {};     --All Lua modules on Wikipedia must begin by defining a variable 
+                    --that will hold their externally accessible functions.
+                    --Such variables can have whatever name you want and may 
+                    --also contain various data as well as functions.
+p.hello = function( frame )     --Add a function to "p".  
+                                        --Such functions are callable in Wikipedia
+                                        --via the #invoke the command.
+                                        --"frame" will contain the data that Wikipedia
+                                        --sends this function when it runs. 
+                                 -- 'Hello' is the name of your choice. The same name needs to be referred to when the module is used.
+    
+    local str = "Hello World!"  --Declare a local variable and set it equal to
+                                --"Hello World!".  
+    
+    return str    --This tells us to quit this function and send the information in
+                  --"str" back to Wikipedia.
+    
+end  -- end of the function "hello"
+</source>
+
+The [[:en:Module: Example | Module:Example]] used above contains up to five different functions('''''hello,hello_to,count_fruit,lucky and Name2''''') that can be called independently using <code><nowiki>{{#invoke:}}</nowiki></code>.
+
+== Lua concept ==
+
+In Lua, there are no type definitions in the language. All values carry their own type. This means that all values can be stored in variables, passed as arguments to other functions, and returned as results. In Scribunto we make use of six out of the eight types available in the Lua programming language.
+
+=== Nil ===
+
+The type nil has one single value, nil, whose main property is to be different from any other value. It often represents the absence of a useful value. 
+
+Both nil and false make a condition false, they are collectively called ''false values''. Any other value makes a condition true. If you try getting a variable that doesn't exist you will get ''nil''.
+
+=== Boolean ===
+
+The type boolean has two values, false and true when converted to a string. And unlike many other languages, only false and nil are considered false for boolean conversion; the number 0 and the empty string are both considered true.
+
+=== Number ===
+
+The type number represents both integer numbers and real (floating-point) numbers, using two subtypes: integer and float. Lua has explicit rules about when each subtype is used, but it also converts between them automatically at run time. 
+
+In a conversion from '''integer''' to '''float''', if the integer value has an exact representation as afloat, that is the result. Otherwise, the conversion gets the nearest higher or the nearest lower representable value. This kind of conversion never fails. 
+
+The conversion from '''float''' to '''integer''' checks whether the float has an exact representation as an ''integer'' (that is, the float has an integral value and it is in the range of integer representation). If it does, that representation is the result. Otherwise, the conversion fails.
+
+=== String ===
+
+The type string represents immutable sequences of bytes. Lua is 8-bit clean: strings can contain any 8-bit value, including embedded zeros ('\0'). A string is converted to an integer or a float following its syntax and the rules of the Lua lexer. The string may have also leading and trailing whitespaces and a sign.
+
+=== Function ===
+
+Functions in Lua are first-class values. They may be created anonymously, passed as arguments, assigned to variables.
+
+Functions are created using the <code>function</code> keyword, and called using parentheses. [[:en: syntactic sugar|Syntactic sugar]] is available for named functions, local functions, and functions that act like member functions to a table.
+
+=== Table ===
+
+The Lua table implements associative arrays, that is, arrays that can be indexed not only with numbers but with any value (except nil). Tables can contain values of all types (except nil).  To represent records, Lua uses the field name as an index. The Lua table type supports this representation by providing a.name as syntactic sugar for <code>a[name]</code>. 
+
+Tables are created using curly braces. The empty table is {}. They store a set of key/value pairs. In a Key/Value pair you can store a value under a key and then later retrieve the value using that key.
+
+== Data type conversion ==
+
+Lua will automatically convert string and number types to the correct format to perform calculations. This automatic conversion of types is called '''''coercion.'''''. Performing arithmetic in Lua to a string it first converts the string to a number else the operation will return an exception when string can't be converted. See example below:
+<source lang="Lua">
+= 10 + "7"   -- Addition of a number and a string
+result = 17   --returns a number
+
+= "John" + 43
+stdin:1: attempt to perform arithmetic on a string value
+stack traceback:
+        stdin:1: in main chunk
+        [C]: ?
+</source>
+
+The string "John" cannot be converted to a number and so an exception occurs. Similarly, in comparison operators, data conversion plays a major role as shown in the example below:
+<source lang="Lua">
+ = 100 == "100"  --comparing a number and a string
+result =  False  -- they are not equal
+
+ = 100 ~= "hello"  -- a number is not equal to a string
+result = true   --- they are not equal
+
+ = 100 == tonumber("100")  --tonumber converts the string to a number 
+result = true         -- they are equal after the conversion
+
+ = 100 <= "100"        
+result = stdin:1: attempt to compare number with string
+stack traceback:
+        stdin:1: in main chunk
+        [C]: ?
+
+</source>
+
+In Lua (in)equality operators consider a number to be not equal to its string representation (or any non-number type in fact) as shown in the example above. It's advised to not rely on automatic coercion, explicitly define a type for performance-sensitive computation.
+
+== Basic operation in lua ==
+
+=== The print function ===
+
+We'll use the print() function to print out values or calculations on those values. The parentheses around the arguments are important and will cause an error if omitted. 
+<source lang="lua"> 
+
+print("hello")    -- print the string hello.
+
+hello            -- the result
+
+</source>
+
+=== Assignment ===
+
+Lua allows for multiple assignments. We can assign strings to variables just like we can numbers:
+
+<source lang="Lua">
+
+who = "John"       -- assign who to "John" 
+
+print(who)
+
+John               -- Result of the print function
+</source>
+
+=== Concatenate  ===
+
+The string concatenation operator in Lua is denoted by two dots ('..'). We can concatenate (join together) strings together using the .. operator:
+
+<source lang="lua">
+
+print("hello " .. who)       -- the variable "who" was assigned above
+
+hello John        --Result
+</source>
+
+=== Comment ===
+
+A comment starts with a double hyphen (--) anywhere outside a string. Long comments are frequently used to disable code temporarily.
+
+Other operations such as String manipulation, tables, numbers will be discussed intensively in [[:mw: Lua/Tutorial | Lua tutorials]]
+
+== References ==
+
+* [https://www.lua.org/manual/5.4/manual.html lua Official Documentation]
+* [https://www.lua.org/manual/5.4/manual.html#3.4.3  Lua Manual]
+* {{ll|Extension:Scribunto/Lua reference manual}}
+* [[w:User:RexxS/GCI|RexxS Docs]]
+* [http://lua-users.org/  lua-user Docs]
