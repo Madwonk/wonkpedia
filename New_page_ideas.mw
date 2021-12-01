@@ -33,6 +33,7 @@ default=(Article title)
 * searching Chinese video platforms like bilibili, youku, etc. for open source stuff
 * downloading videos with youtube-dl or similar (maybe we should have a request form for videos to be archived here?)
 * did that guide on naming conventions/databases ever get finished?<ref>https://www.globalsecurity.org/wmd//world/dprk/tae-sung.htm</ref><ref>https://geonames.nga.mil/namesgaz/</ref>
+* Do imagery analysis using forensicly (similar to tungsten, but we need a good case study)<ref>https://29a.ch/photo-forensics/</ref>
 
 == References ==
 <references />
