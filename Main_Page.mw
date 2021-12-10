@@ -3,7 +3,7 @@ __NOTITLE__
 <div id="mp-topbanner" class="mp-bordered">
 <div id="mp-welcomecount">
 <div id="mp-welcome">Welcome to [[Wonkpedia]],</div>
-<div id="mp-free">A project to document nonproliferation and arms control. Note that much of the site is currently under construction! (We are currently [[Special:RequestAccount|looking for contributors]]!)</div>
+<div id="mp-free">A project to document nonproliferation, arms control, and other OSINT work. Note that much of the site is currently under construction! (We are currently [[Special:RequestAccount|looking for contributors]]!)</div>
 <div id="articlecount">We currently have [[Special:Statistics|{{NUMBEROFARTICLES}}]] articles!</div>
 </div>
 </div>
