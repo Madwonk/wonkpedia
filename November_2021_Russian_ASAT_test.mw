@@ -1,0 +1,33 @@
+{{Main|Anti-Satellite Weapon (ASAT)}}The November 2021 Russian ASAT test was a notable test of the modern [[Nudol]] weapons system, a direct-ascent ASAT (DA-ASAT) system. In plain English, it's a rocket that starts on the ground (as opposed to being in space) that goes straight up and makes the nearby target object in the sky (satellite, incoming missile, etc.) go boom. (There's an interesting database listing some of these systems here)<ref>https://spacesecurity.wse.jhu.edu/direct-ascent-asat-technologies/</ref>
+
+
+So, what was so notable about this test? Several things! Firstly, it actually ''wasn't'' all that notable that an ASAT weapon got tested, kessler effect be damned. China, India, and Russia have all recently been kinda irresponsible in that respect (Russia even conducted a less-interesting test of the same system the previous year).<ref>https://spacewatch.global/2020/04/russia-tests-pl-19-nudol-direct-ascent-asat-system/</ref> However, while this test seems to have been a similar altitude (400-500km orbit)<ref>https://twitter.com/planet4589/status/1284218252466573313?s=20</ref>, it targeted a much heavier satellite than the Chinese (2,000 kg vs 750 kg) and instead of a head-on collision, the strike was "from the back"<ref>https://twitter.com/planet4589/status/1460306251997450246?s=20</ref> increasing average velocity and thus the debris field spread (especially at higher apogees).<ref>https://twitter.com/brianweeden/status/1460314050282274832</ref>
+
+
+As you can imagine, this debris field freaked out more than a few people at NASA and on the ISS (ironic because the ISS has Russian cosmonauts onboard) to the point where astronauts were force to shelter in their reentry vehicles as a precaution.<ref>https://spacenews.com/russia-destroys-satellite-in-asat-test/</ref><ref>https://twitter.com/planet4589/status/1460297122641858562?s=21</ref> The satellite targeted was COSMOS 1408, an abandoned Soviet satellite.<ref>https://twitter.com/morkorg/status/1460253349157249026?s=21</ref><ref>https://in-the-sky.org/spacecraft.php?id=13552</ref>
+
+== General timeline ==
+
+* Russian tests in 1990, 1991, 1994
+* China test 2007 (this one people were really angry about!)
+* US <s>ASAT demonstration</s> """environment protection""" 2008
+* More Russian tests 2015-onward
+
+== But why though? ==
+I mean, it's Russia. The country isn't exactly known for being comfortable as a declining state with its borders massively reduced after the Soviet Union collapsed. Everyone else is getting/building/testing ASAT weapons, so why not them? It isn't like we really have any arms control treaties around the issue of ASAT systems (though, perhaps we should seeing the danger of Kessler ruining tons of important space infrastructure). Obviously though, the fear of Kessler isn't enough to actually deter development in this space.<sup>[citation NOT needed]</sup>
+
+If only collective knowledge was a thing, Russia might have learned from China's disastrous 2007 test<ref>https://www.justsecurity.org/79320/the-threat-from-outer-space-russia-tests-kinetic-da-asat-weapon/</ref> that this is generally just a bad idea (without any consequences, unless you consider harsh words to equal action<ref>https://www.cnn.com/2021/11/15/politics/russia-anti-satellite-weapon-test-scn/index.html</ref>). Some have argued that this is to preempt any such arms control treaties, giving them a system to trade for a better deal.<ref>https://foreignpolicy.com/2021/12/26/putin-russia-tested-space-asat-satellite-weapon/</ref>
+
+With the background of the Ukraine buildup (and the Belarus border crisis), it's also entirely possible that the test was a demonstration of resolve, essentially that Putin was saying "IDGAF" about your stinkin' military budgets. It isn't entirely unrealistic: the whole thing seems stupid when Russia had previously conducted simulated tests that didn't generate a ton of debris.
+
+It certainly seems like the left hand of the Russian government didn't know what the right hand was doing. There's (anecdotal based on the confused response) reasons to believe that the Russian NASA equivalent (Roscosmos) didn't really know how to respond and seemed a bit annoyed at the test.<ref>https://twitter.com/joroulette/status/1460380199581847556?s=20</ref> Roscosmos has apparently pushed to ban kinetic ASAT tests (that generate debris).<ref>https://twitter.com/komissarwhipla/status/1460344165838041094?s=21</ref> If true, it's staggering how idiotic and irresponsible this whole thing was, especially when the debris field could (potentially!) threaten the ISS.
+
+Let's just hope that they got the data they wanted from this test. We certainly wouldn't want them to do even more!<ref>https://www.msn.com/en-us/news/technology/russian-anti-satellite-missile-test-was-the-first-of-its-kind/ar-AAQPoQ7</ref>
+
+== tl;dr ==
+<youtube>https://youtu.be/mvdQcDDUV1o</youtube>
+
+== References ==
+<references />
+[[Category:Russia]]
+[[Category:ASAT]]
