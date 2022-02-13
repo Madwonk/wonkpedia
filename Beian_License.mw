@@ -1,0 +1,10 @@
+Within China, there are a number of rules and regulations that seriously restrict the ability for individuals to create and run their own independent websites. One part of this is the Beian (备案) License, which is a unique identifier that many (all?) Chinese sites will have listed at the bottom of the page, often along with a link to the main Beian site to look up and verify the site's authenticity.<ref>https://chinese.marketing/2018/07/26/icp-beian-your-license-to-operate-online-in-china/</ref> Think of it like an insecure, censored version of SSL/TLS. But worse and more evil in every way.
+
+The main site also appears to act as a central dashboard for cyber security of Chinese sites. However, most pages appear empty (do you need to log in for them to populate?) Worth adding that the site does not ''actually'' support SSL so it's questionable the degree of security going on.
+
+== Links ==
+
+* [http://www.beian.gov.cn/ Beian Site]
+
+== References ==
+<references />
