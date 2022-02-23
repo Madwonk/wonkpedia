@@ -142,7 +142,7 @@ The type string represents immutable sequences of bytes. Lua is 8-bit clean: str
 
 Functions in Lua are first-class values. They may be created anonymously, passed as arguments, assigned to variables.
 
-Functions are created using the <code>function</code> keyword, and called using parentheses. [[:en: syntactic sugar|Syntactic sugar]] is available for named functions, local functions, and functions that act like member functions to a table.
+Functions are created using the <code>function</code> keyword, and called using parentheses. Syntactic sugar is available for named functions, local functions, and functions that act like member functions to a table.
 
 === Table ===
 
