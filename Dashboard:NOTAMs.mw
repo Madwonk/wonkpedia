@@ -1,5 +1,5 @@
 == [[Novaya Zemlya]] ==
-Admin Note: This is currently not being updated live. The plan is to automate this to update daily over the winter break. The source code is on [https://github.com/BenMueller/notams_to_geojson Github].{{#display_map: center=Но́вая Земля́ | zoom=3 |  geojson=Novaya_Zemlya}}
+Admin Note: This feature is still heavily in beta and may not work perfectly. The source code is on [https://github.com/BenMueller/notams_to_geojson Github].{{#display_map: center=Но́вая Земля́ | zoom=3 |  geojson=Novaya_Zemlya}}
 
 == China ==
 Todo: I would like to also automate some NOTAM retrieval from launch sites in China, but haven't been able to identify a source to pull from. For the above I'm using https://ourairports.com but I haven't been able to find the "right" airport/region for the equivalent in China.
